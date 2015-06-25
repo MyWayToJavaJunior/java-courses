@@ -7,7 +7,7 @@ public class Calculate {
 	* @param arg Массив входящих аргументов
 	* @param first Первый входящий аргумент
 	* @param second Второй входящий аргумент
-	* @param summ Результат сложения входящий аргументов first и second
+	* @param summ Выводится результат сложения входящий аргументов first и second
 	*/
 	public static void main(String[] arg) {
 	

@@ -1,18 +1,44 @@
 import java.util.Scanner;
-
+/**
+* Класс производит операции над введенными с клавиатуры числами
+* используя класс Calculator
+* @author DK
+* @date 25.06.2015
+*/
 public class InteractRunner {
 
 	public static void main(String[] arg) {
 		Scanner reader = new Scanner(System.in);
 		try {
+			/**
+			* @see Calculator
+			*/
 			Calculator calc = new Calculator();
+			/**
+			* @param exit Флаг для выхода из цикла
+			*/
 			String exit = "no";
+			/**
+			* Цикл повторяется пока переменная exit имеет значение no
+			*/
 			while (!exit.equals("yes")) {
+				/**
+				* Запрашиваем и получаем первый аргумент 
+				* @param first Первый аргумент
+				*/
 				System.out.println("Enter first arg: ");
 				String first = reader.next();
+				/**
+				* Запрашиваем и получаем второй аргумент 
+				* @param second Второй аргумент
+				*/
 				System.out.println("Enter second arg: ");
 				String second = reader.next();
-				System.out.println("Enter add/sub/mult/div ");
+				/**
+				* Запрашиваем и получаем операцию которую будем использовать для обработки аргументов
+				* @param operation операция обработки, варианты add/sub/mult/div
+				*/
+				System.out.println("Enter add/sub/mult/div: ");
 				String operation = reader.next();
 				switch (operation) {
 					case "add":	calc.add(Integer.valueOf(first), Integer.valueOf(second));
