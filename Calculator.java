@@ -8,6 +8,24 @@ public class Calculator {
 		}
 	}
 	
+	public void sub(int... params) {
+		for (Integer param : params) {
+			this.result -= param;
+		}
+	}
+	
+	public void mult(int... params) {
+		for (Integer param : params) {
+			this.result *= param;
+		}
+	}
+	
+	public void div(int... params) {
+		for (Integer param : params) {
+			this.result /= param;
+		}
+	}
+	
 	public int getResult() {
 		return this.result;
 	}
